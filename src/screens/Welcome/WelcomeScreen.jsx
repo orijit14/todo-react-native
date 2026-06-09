@@ -77,7 +77,7 @@ const WelcomeScreen = () => {
         </View>
         <View style={styles.btnWrapper}>
           <Pressable
-            onPress={(e) => Alert.alert("hii")}
+            onPress={() => router.push("/dashboard")}
             style={styles.getStartedBtn}
           >
             <Text style={{ color: COLORS.white, fontWeight: "bold" }}>

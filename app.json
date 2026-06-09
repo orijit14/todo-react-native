@@ -35,6 +35,12 @@
           }
         }
       ],
+      [
+        "expo-image",
+        {
+          "disableLibdav1d": true
+        }
+      ],
       "expo-font"
     ],
     "experiments": {
