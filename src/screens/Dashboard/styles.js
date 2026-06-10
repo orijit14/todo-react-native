@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import FONTS from "../../constants/fonts";
 import { SCREEN_WIDTH } from "../../utils/responsive";
 
 export default StyleSheet.create({
@@ -8,6 +9,7 @@ export default StyleSheet.create({
   },
   scrollViewContainer: {
     paddingBottom: 20,
+    paddingHorizontal: 20,
     justifyContent: "center",
   },
   /* header: {
@@ -19,7 +21,7 @@ export default StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingHorizontal: 16,
+
     paddingTop: 10,
   },
   /* headerContent: {
@@ -32,9 +34,11 @@ export default StyleSheet.create({
   },
   headerWelcome: {
     fontSize: 22,
+    fontFamily: FONTS.regular,
     fontWeight: "bold",
   },
   headerDesc: {
+    fontFamily: FONTS.regular,
     fontSize: 13,
     color: "#757a94",
   },
@@ -92,7 +96,6 @@ export default StyleSheet.create({
   taskContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginHorizontal: 16,
     marginTop: 20,
   },
 
@@ -115,17 +118,80 @@ export default StyleSheet.create({
     // height: 65,
   },
   taskTitle: {
+    fontFamily: FONTS.regular,
     fontSize: 13,
     fontWeight: "bold",
     color: "#757a94",
   },
   taskDesc: {
+    fontFamily: FONTS.regular,
     fontSize: 11,
     color: "#8d95a3",
   },
   taskCount: {
     // fontSize: 18,
+    fontFamily: FONTS.extraBold,
     fontSize: 26,
     fontWeight: "700",
+  },
+
+  allTaskWrapper: {
+    marginVertical: 20,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+
+  font20: {
+    fontFamily: FONTS.extraBold,
+    fontSize: 16,
+  },
+  fontWeightBold: {
+    fontWeight: "bold",
+  },
+
+  tabButton: {
+    paddingHorizontal: 10,
+    paddingVertical: 7,
+    borderRadius: 12,
+    marginLeft: 3,
+  },
+  activeTab: {
+    backgroundColor: "#6245e8",
+  },
+  tabText: {
+    color: "#757a94",
+    fontFamily: FONTS.regular,
+    fontWeight: "bold",
+    fontSize: 12,
+  },
+
+  taskBody: {
+    backgroundColor: "#fefefe",
+    backgroundColor: "red",
+    padding: 10,
+    borderRadius: 20,
+  },
+  bodyContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    borderBottomColor: "black",
+    borderBottomWidth: 1,
+    paddingVertical: 10,
+  },
+  lastItem: {
+    borderBottomWidth: 0,
+  },
+  calendarContainer: {
+    backgroundColor: "pink",
+    flexDirection: "row",
+  },
+  calendarFontSize: {
+    fontSize: 10,
+  },
+  taskBodyTitle: {
+    fontSize: 15,
+    fontWeight: 600,
   },
 });
