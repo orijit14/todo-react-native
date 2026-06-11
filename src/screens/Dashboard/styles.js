@@ -6,6 +6,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#faf9fe",
+    paddingHorizontal: 20,
   },
   scrollViewContainer: {
     paddingBottom: 20,
@@ -21,7 +22,6 @@ export default StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-
     paddingTop: 10,
   },
   /* headerContent: {
@@ -135,6 +135,14 @@ export default StyleSheet.create({
     fontWeight: "700",
   },
 
+  taskListCard: {
+    flex: 1,
+    backgroundColor: "#fff",
+    borderRadius: 20,
+    paddingHorizontal: 20,
+    marginBottom: 100, // space for bottom tab
+  },
+
   allTaskWrapper: {
     marginVertical: 20,
     flexDirection: "row",
@@ -168,7 +176,6 @@ export default StyleSheet.create({
 
   taskBody: {
     backgroundColor: "#fefefe",
-    backgroundColor: "red",
     padding: 10,
     borderRadius: 20,
   },
@@ -176,7 +183,7 @@ export default StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    borderBottomColor: "black",
+    borderBottomColor: "#f1f1f7",
     borderBottomWidth: 1,
     paddingVertical: 10,
   },
@@ -184,14 +191,24 @@ export default StyleSheet.create({
     borderBottomWidth: 0,
   },
   calendarContainer: {
-    backgroundColor: "pink",
     flexDirection: "row",
+    alignItems: "center",
+    gap: 4,
   },
   calendarFontSize: {
     fontSize: 10,
   },
   taskBodyTitle: {
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: 600,
+  },
+  bodyLeft: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 12,
+  },
+  deletedText: {
+    textDecorationLine: "line-through",
   },
 });

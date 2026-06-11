@@ -77,7 +77,7 @@ const WelcomeScreen = () => {
         </View>
         <View style={styles.btnWrapper}>
           <Pressable
-            onPress={() => router.push("/dashboard")}
+            onPress={() => router.push("/(tabs)/dashboard")}
             style={styles.getStartedBtn}
           >
             <Text style={{ color: COLORS.white, fontWeight: "bold" }}>
