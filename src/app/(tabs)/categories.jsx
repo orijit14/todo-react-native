@@ -1,11 +1,7 @@
-import { Text, View } from "react-native";
+import CategoryScreen from "../../screens/Category/CategoryScreen";
 
 const Category = () => {
-  return (
-    <View>
-      <Text>Category</Text>
-    </View>
-  );
+  return <CategoryScreen />;
 };
 
 export default Category;
